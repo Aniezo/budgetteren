@@ -1,0 +1,119 @@
+
+/* Algemene pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Achtergrond van het inlogformulier */
+.inloggentekstbackground {
+    background-color: white;
+    width: 420px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Titel */
+.inloggentekst {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.inloggentekst h1 {
+    color: #333;
+    font-size: 32px;
+}
+
+/* Inlogvelden */
+.inlogbalk {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Gebruikersnaam en wachtwoord */
+.e-mail h2,
+.wachtwoord h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Invoervelden */
+.e-mail input,
+.wachtwoord input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.e-mail input:focus,
+.wachtwoord input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+.inloggenknop button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inloggenknop button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Mobiele weergave */
+@media (max-width: 500px) {
+    .inloggentekstbackground {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+
+.inlogpagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.melding {
+    background-color: #ffe6e6;
+    color: #d93025;
+    border: 1px solid #ffb3b3;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 420px;
+    max-width: 90%;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
